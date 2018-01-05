@@ -1,0 +1,8 @@
+---
+applications:
+- name: empservice
+  instances: 1
+  health-check-type: none
+  host: empservice
+  buildpack: java_buildpack_offline
+  path: target/empservice-1.0-SNAPSHOT.jar
